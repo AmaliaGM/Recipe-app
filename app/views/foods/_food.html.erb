@@ -1,27 +1,23 @@
 <div id="<%= dom_id food %>">
-  <p>
-    <strong>Name:</strong>
-    <%= food.name %>
-  </p>
-
-  <p>
-    <strong>Measurement unit:</strong>
-    <%= food.measurement_unit %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= food.price %>
-  </p>
-
-  <p>
-    <strong>Quantity:</strong>
-    <%= food.quantity %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= food.user_id %>
-  </p>
-
+ 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Food</th>
+      <th scope="col">Measurement unit</th>
+      <th scope="col">Unit price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= food.name %></td>
+      <td><%= food.measurement_unit %></td>
+      <td><%= food.price %></td>
+      <td><%= link_to "Delete" %></td>
+    </tr>
+  </tbody>
+</table>
 </div>
