@@ -2,7 +2,7 @@
 <p style="color: green"><%= notice %></p>
 <h3><%= link_to 'Add food', new_food_path %></h3>
 
-<table class="table table-striped table-bordered table-hover">
+<table>
     <% if @foods.empty? %>
       <p>There are no foods yet.</p>
     <% else %>
