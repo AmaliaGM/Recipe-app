@@ -20,7 +20,7 @@
       <p> By:
       <%= recipe.user_id %>
       </p>
-      <%= link_to "Remove", recipe_path(recipe),  data: {
+      <%= link_to "REMOVE", recipe_path(recipe),  data: {
         turbo_method: :delete,
         turbo_confirm: "Are you sure?"
         } %>
@@ -32,12 +32,8 @@
         </p>
         <p>
         Total price
-        </p>
-      
-        
+        </p>       
         </div>
         </div>
        
-        
         <% end %>
-<%= link_to "New recipe", new_recipe_path %>
