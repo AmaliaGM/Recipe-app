@@ -17,9 +17,6 @@
       <h1>
         <%= link_to recipe.name, recipe, class: "recipetitle" %>
       </h1>
-      <p> By:
-      <%= recipe.user_id %>
-      </p>
       <%= link_to "REMOVE", recipe_path(recipe),  data: {
         turbo_method: :delete,
         turbo_confirm: "Are you sure?"
