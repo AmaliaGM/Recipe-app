@@ -10,21 +10,16 @@
 </head>
 <p style="color: green"><%= notice %></p>
 
-<h1>Public recipes</h1>
+<h1 class= "public title">Public recipes</h1>
 <% @recipes.each do |recipe| %>
 <div class="row g-0 text-center">
     <div class="col-sm-6 col-md-8">
       <h1>
-        <%= link_to recipe.name, recipe %>
+        <%= link_to recipe.name, recipe, class: "recipetitle" %>
         </h1>
       <p> By:
       <%= recipe.user.name %>
-      </p>
-      <%= link_to "Remove", recipe_path(recipe),  data: {
-        turbo_method: :delete,
-        turbo_confirm: "Are you sure?"
-        } %>
-       
+      </p>       
         </div>
 
         <div class="col-6 col-md-4">
@@ -38,5 +33,3 @@
         </div>
         </div>
         <% end %>
-        
-<%= link_to "New recipe", new_recipe_path %>
