@@ -1,0 +1,21 @@
+<h1>Public recipes</h1>
+
+<ul>
+  <% @recipes.each do |recipe| %>
+     <li>
+         <%= recipe.name %>
+     </li>
+     <li>
+       <p>by  <%= recipe.user.name %> </p>
+     </li>
+     <li>
+       <p>Description:  <%= recipe.description %> </p>
+     </li>
+     <li>
+       <p>Total number of food: <%= recipe.user.foods.length %> </p>
+     </li>
+     <li>
+       <p>Total number of food: $<%= recipe.user.foods.first.price %> </p>
+     </li>
+<% end %>
+</ul>

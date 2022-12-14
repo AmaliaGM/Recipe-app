@@ -1,0 +1,31 @@
+
+<p style="color: green"><%= notice %></p>
+<h3><%= link_to 'Add food', new_food_path %></h3>
+
+<table>
+    <% if @foods.empty? %>
+      <p>There are no foods yet.</p>
+    <% else %>
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Measurement Unit</th>
+          <th>Unit Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @foods.each do |food| %>
+          <tr>
+            <td><%= food.name %></td>
+            <td><%= food.measurement_unit %></td>
+            <td><span>$<%= food.price %></span></td>
+            <td><%= link_to "Delete", food_path(food),  data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    <% end %>
+  </table>
