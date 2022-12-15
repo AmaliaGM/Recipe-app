@@ -15,7 +15,10 @@ class FoodsController < ApplicationController
   end
 
   # GET /foods/1/edit
-  def edit; end
+
+  def edit
+    
+  end
 
   # POST /foods or /foods.json
   def create
@@ -51,7 +54,9 @@ class FoodsController < ApplicationController
     @food.destroy
 
     respond_to do |format|
-      format.html { redirect_to foods_url, notice: 'Food was successfully destroyed.' }
+
+      format.html { redirect_to foods_url, notice: "Food was successfully deled." }
+
       format.json { head :no_content }
     end
   end
