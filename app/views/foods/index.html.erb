@@ -6,7 +6,8 @@
 
 <h1>Foods</h1>
 <p  class= 'ms-auto'>
-<%= button_to "Add food", new_food_path %>
+<%= link_to new_food_path, :class => "btn btn-outline-dark add mb-3" do %> Add food 
+  <% end %>
 </p>
 </div>
 
