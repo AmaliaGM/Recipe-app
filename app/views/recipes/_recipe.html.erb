@@ -25,8 +25,17 @@
   </p>
 
   <p>
-    <strong>User:</strong>
-    <%= recipe.user_id %>
+    <%= button_to 'Generate Shopping list' %>
   </p>
+
+  <p>
+    <%= button_to 'Add ingredients' %>
+  </p>
+
+  <% recipe.user.foods.each do |recipe| %>
+      <p> food name: <%= recipe.name %> </p>
+      <p> quantty: <%= recipe.quantity %> </p>
+      <p> value: <%= recipe.price %> </p>
+    <% end %>
 
 </div>

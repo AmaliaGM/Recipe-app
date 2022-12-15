@@ -4,10 +4,21 @@
 
 <div id="recipes">
   <% @recipes.each do |recipe| %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Show this recipe", recipe %>
-    </p>
+    <div>
+      <div class='d-flex'>
+      <h1>
+      <%= link_to recipe.name, recipe %>
+      </h1>
+      <p class= 'ms-auto'>
+      <%= recipe.description %>
+      </p>
+      </div>
+
+      <%= link_to "Remove", recipe_path(recipe),  data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+    </div>
   <% end %>
 </div>
 
