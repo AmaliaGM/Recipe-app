@@ -21,18 +21,12 @@
         turbo_method: :delete,
         turbo_confirm: "Are you sure?"
         } %>
-       
         </div>
         <div class="col-6 col-md-4">
         <p>
-        Total food items 
-        </p>
-        <p>
-        Total price
+        <%= recipe.description %>
         </p>       
         </div>
         </div>
-       
         <% end %>
-
         <%= link_to "Add New Recipe", new_recipe_path, class: "title" %>
