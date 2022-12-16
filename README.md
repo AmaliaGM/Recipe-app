@@ -119,7 +119,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe how a new developer could make use of your project.
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps..
 
 ### Prerequisites
 
