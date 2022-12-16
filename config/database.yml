@@ -25,8 +25,8 @@ default: &default
 development:
   <<: *default
   database: Recipe_app_development
-  username: postgres
-  password: amalia
+#  username: postgres
+#  password: amalia
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: Recipe_app_production
   username: postgres
   password: amalia
