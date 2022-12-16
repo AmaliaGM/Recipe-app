@@ -203,7 +203,7 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 Amalia Gomez Moro
+👤 **Amalia Gomez Moro**
 
 GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
 Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
