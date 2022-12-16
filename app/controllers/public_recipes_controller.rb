@@ -9,7 +9,7 @@ class PublicRecipesController < ApplicationController
   def find_price
     price = 0
     recipe = Recipe.first
-    recipe.foods.map { |rec| price = price + rec.price }
-    return price
+    recipe.foods.map { |rec| price += rec.price }
+    price
   end
 end
