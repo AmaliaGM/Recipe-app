@@ -1,5 +1,6 @@
 class FoodsController < ApplicationController
   before_action :set_food, only: %i[show edit update destroy]
+  before_action :authenticate_user!
 
   # GET /foods or /foods.json
   def index
@@ -16,9 +17,7 @@ class FoodsController < ApplicationController
 
   # GET /foods/1/edit
 
-  def edit
-    
-  end
+  def edit; end
 
   # POST /foods or /foods.json
   def create
@@ -54,8 +53,7 @@ class FoodsController < ApplicationController
     @food.destroy
 
     respond_to do |format|
-
-      format.html { redirect_to foods_url, notice: "Food was successfully deled." }
+      format.html { redirect_to foods_url, notice: 'Food was successfully deled.' }
 
       format.json { head :no_content }
     end
