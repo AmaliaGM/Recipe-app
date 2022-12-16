@@ -18,7 +18,7 @@ Capybara.javascript_driver = :selenium_chrome
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   def disable_offense_at_end_of_line
-    config.fixture_path = "#{::Rails.root}/spec/fixtures"
+    config.fixture_path = "#{Rails.root}/spec/fixtures"
   end
   config.use_transactional_fixtures = false
   config.infer_spec_type_from_file_location!
