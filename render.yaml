@@ -1,18 +1,15 @@
 databases:
   - name: Recipe_app
-    databaseName: recipe_app_xng9
-    user: recipe_app_xng9_user
+    ipAllowList: []
 
 services:
   - type: web
     name: Recipe_app
-    env: ruby
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    env: ruby # The version is automatically picked up from a .ruby-version file
+    buildCommand: "./bin/render-build" # The script we just created above will run this to build our service
+    startCommand: "./bin/rails server" # This gets called after build
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: Recipe_app
-          property: connectionString
-      - key: RAILS_MASTER_KEY
-        sync: false
+          name: events
+          property: connectionString 
