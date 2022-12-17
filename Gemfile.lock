@@ -145,6 +145,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.10-x64-unknown)
       racc (~> 1.4)
+    nokogiri (1.13.10-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.5)
     pg (1.4.5-x64-mingw-ucrt)
@@ -254,6 +256,7 @@ PLATFORMS
   arm64-darwin-22
   x64-mingw-ucrt
   x64-unknown
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -266,6 +269,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
+  rspec-mocks (~> 3.12, >= 3.12.1)
   rspec-rails
   selenium-webdriver
   sprockets-rails
