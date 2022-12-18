@@ -85,6 +85,6 @@ production:
   <<: *default
   database: Recipe_app_production
   username: postgres
-  password: <%= ENV['RECIPE_APP_DATABASE_PASSWORD'] %>
+  password: amalia
   url: <%= ENV['DATABASE_URL'] %>
   
