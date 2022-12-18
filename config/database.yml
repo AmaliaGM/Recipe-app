@@ -60,6 +60,8 @@ development:
 test:
   <<: *default
   database: Recipe_app_test
+  username: postgres
+  password: amalia
  
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,7 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: Recipe_app_production
-  username: postgres
-  password: amalia
-    
+  url: <%= ENV['DATABASE_URL'] %>
