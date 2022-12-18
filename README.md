@@ -205,9 +205,9 @@ Example:
 
 👤 **Amalia Gomez Moro**
 
-- GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
-- Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
-- LinkedIn: [@Maria-Amalia-Gomez-Moro](https://www.linkedin.com/in/Maria-Amalia-Gomez-Moro/)
+GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
+Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
+LinkedIn: [@Maria-Amalia-Gomez-Moro](https://www.linkedin.com/in/Maria-Amalia-Gomez-Moro/)
 
 👤 **Omachi John**
 
