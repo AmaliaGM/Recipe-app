@@ -1,2 +1,2 @@
 ---
-BUNDLE_WITH: "development:test"
+BUNDLE_WITHOUT: "somerandomstring"
