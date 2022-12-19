@@ -1,0 +1,22 @@
+<h4>Add Recipe Food</h4>
+<%= form_with model: [@recipe, @recipe.recipe_foods.create] do |form|%>
+<div class="mb-3">
+  <%= form.label :food %>
+  <div>
+    <%= form.select :food_id, Food.all.collect {|food| [food.name, food.id]},{
+    include_blank: true} , class:"form-select" %>
+  </div>
+</div>
+<div class="mb-3">
+  <%= form.label :quantity %>
+  <div>
+    <%= form.number_field :quantity , class:"form-control" , required: true,
+    placeholder: '1', min: 1%>
+  </div>
+</div>
+
+<div class="mb-3"><%= form.submit "Add", class:"btn btn-dark" %></div>
+<%end%>
+<div class="mb-3">
+  <%=link_to 'Return to Recipes', recipe_path(@recipe.id), class:"btn btn-link"%>
+</div>

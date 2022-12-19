@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Microverse README Template.</b></h3>
 
 </div>
 
@@ -57,9 +57,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Recipe App <a name="about-project"></a>
+![blog-gif](https://media3.giphy.com/media/svdsMNSzOShzO/giphy.gif)
 
-> Describe your project in 1 or 2 sentences.
+**Recipe App** will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
 **[your_project__name]** is a...
 
@@ -118,7 +119,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe how a new developer could make use of your project.
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps..
 
 ### Prerequisites
 
@@ -202,18 +203,17 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Amalia Gomez Moro**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
+Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
+LinkedIn: [@Maria-Amalia-Gomez-Moro](https://www.linkedin.com/in/Maria-Amalia-Gomez-Moro/)
 
-👤 **Author2**
+👤 **Omachi John**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@MrOmachi](https://github.com/MrOmachi)
+- Twitter: [@Mr_Omachi](https://twitter.com/Mr_Omachi)
+- LinkedIn: [John Omachi](https://www.linkedin.com/in/johnomachi/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
