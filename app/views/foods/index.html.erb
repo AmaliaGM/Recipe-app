@@ -1,0 +1,39 @@
+
+<p style="color: green"><%= notice %></p>
+
+<div class= "d-flex">
+
+<h1>Foods</h1>
+<p  class= 'ms-auto'>
+<%= link_to new_food_path, :class => "btn btn-outline-dark add mb-3" do %> Add food 
+  <% end %>
+
+</p>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Food</th>
+      <th scope="col">Measurement unit</th>
+      <th scope="col">Unit price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @foods.each do |food| %>
+    <tr>
+      <th scope="row"><%= food.id %></th>
+      <td><%= food.name %></td>
+      <td><%= food.measurement_unit %></td>
+      <td><%= food.price %></td>
+      <td><%= link_to "Delete", food_path(food),  data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></td>
+    </tr>
+  <% end %>
+    
+  </tbody>
+  </table>
