@@ -1443,3 +1443,124 @@ puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.5) lib/puma/server.rb:443:in `process_client'
 puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/foods/new" for ::1 at 2023-01-27 12:05:27 -0300
+  
+LoadError (cannot load such file -- C:/Users/maria/Recipe-app/config/routes.rb):
+  
+railties (7.0.4) lib/rails/application/routes_reloader.rb:50:in `load'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:50:in `block in load_paths'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:50:in `each'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:50:in `load_paths'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:24:in `reload!'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:38:in `block in updater'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (7.0.4) lib/rails/application/routes_reloader.rb:13:in `execute'
+railties (7.0.4) lib/rails/application/finisher.rb:171:in `block (2 levels) in <module:Finisher>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:445:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:445:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:687:in `block (2 levels) in default_terminator'
+activesupport (7.0.4) lib/active_support/callbacks.rb:686:in `catch'
+activesupport (7.0.4) lib/active_support/callbacks.rb:686:in `block in default_terminator'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:106:in `run_callbacks'
+activesupport (7.0.4) lib/active_support/execution_wrapper.rb:129:in `run'
+activesupport (7.0.4) lib/active_support/execution_wrapper.rb:125:in `run!'
+activesupport (7.0.4) lib/active_support/reloader.rb:114:in `run!'
+activesupport (7.0.4) lib/active_support/execution_wrapper.rb:78:in `block in run!'
+<internal:kernel>:90:in `tap'
+activesupport (7.0.4) lib/active_support/execution_wrapper.rb:75:in `run!'
+activesupport (7.0.4) lib/active_support/reloader.rb:63:in `run!'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/foods/new" for ::1 at 2023-01-27 12:10:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FoodsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/_form.html.erb (Duration: 513.3ms | Allocations: 4972)
+  Rendered foods/new.html.erb within layouts/application (Duration: 568.0ms | Allocations: 5293)
+  Rendered layout layouts/application.html.erb (Duration: 6736.6ms | Allocations: 43236)
+Completed 200 OK in 7380ms (Views: 7051.0ms | ActiveRecord: 0.0ms | Allocations: 48865)
+
+
+Started GET "/foods/new" for ::1 at 2023-01-27 12:53:10 -0300
+Processing by FoodsController#new as HTML
+  [1m[36mUser Load (15.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (Duration: 134.6ms | Allocations: 2387)
+  Rendered layout layouts/application.html.erb (Duration: 157.5ms | Allocations: 2473)
+Completed 500 Internal Server Error in 1067ms (ActiveRecord: 113.9ms | Allocations: 14593)
+
+
+  
+ActionView::Template::Error (Missing partial foods/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/maria/Recipe-app/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  foods/food
+               devise/shared/error_messages
+               action_text/attachables/remote_image
+               action_text/contents/content
+               active_storage/blobs/blob
+               layouts/action_text/contents/content):
+    1: <h1>New food</h1>
+    2: 
+    3: <%= render "form", food: @food %>
+    4: 
+    5: <br>
+    6: 
+  
+app/views/foods/new.html.erb:3
+Started GET "/foods/new" for ::1 at 2023-01-27 12:58:28 -0300
+Processing by FoodsController#new as HTML
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/_form.html.erb (Duration: 363.4ms | Allocations: 3124)
+  Rendered foods/new.html.erb within layouts/application (Duration: 380.3ms | Allocations: 3442)
+  Rendered navbar/_header.html.erb (Duration: 14.9ms | Allocations: 693)
+  Rendered layout layouts/application.html.erb (Duration: 1245.6ms | Allocations: 21480)
+Completed 200 OK in 1625ms (Views: 1344.5ms | ActiveRecord: 46.9ms | Allocations: 26839)
+
+
