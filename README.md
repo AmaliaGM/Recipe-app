@@ -111,6 +111,9 @@ After you're finished please remove all the comments and instructions!
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
+- ![Captura de pantalla (97)](https://user-images.githubusercontent.com/103516637/215143914-ad3e7378-7980-40e4-84b7-4d49f1bc4874.png)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -205,9 +208,9 @@ Example:
 
 👤 **Amalia Gomez Moro**
 
-GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
-Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
-LinkedIn: [@Maria-Amalia-Gomez-Moro](https://www.linkedin.com/in/Maria-Amalia-Gomez-Moro/)
+- GitHub: [@AmaliaGM](https://github.com/AmaliaGM)
+- Twitter: [@AmaliaGomezMoro](https://twitter.com/AmaliaGomezMoro)
+- LinkedIn: [@Maria-Amalia-Gomez-Moro](https://www.linkedin.com/in/Maria-Amalia-Gomez-Moro/)
 
 👤 **Omachi John**
 
