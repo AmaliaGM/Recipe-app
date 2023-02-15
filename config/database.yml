@@ -17,33 +17,39 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  
+  # username: postgres
+  # password: amalia
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: Recipe_app_development
-#  username: postgres
-#  password: amalia
+  database: expenses_check_development
+  encoding: unicode
+  username: postgres
+  password: amalia
+  host: localhost
+  port: 5432
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: Recipe_app
+  # username: postgres
 
   # The password associated with the postgres role (username).
-  #password:
+  # password: chivas11
+  # password: Chivas11!
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -59,10 +65,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Recipe_app_test
+  database: expenses_check_test
+  host: 127.0.0.1
   username: postgres
   password: amalia
- 
+
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -86,3 +93,5 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  username: postgres
+  password: amalia
