@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: expenses_check_development
+  database: RecipeApp_development
   encoding: unicode
   username: postgres
   password: amalia
@@ -65,7 +65,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: expenses_check_test
+  database: RecipeApp_test
   host: 127.0.0.1
   username: postgres
   password: amalia
