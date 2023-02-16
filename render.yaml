@@ -1,18 +1,21 @@
 databases:
-  - name: Recipe_app
-    databaseName: recipe_app_xng9
-    user: recipe_app_xng9_user
+  - name: postgres
+     ipAllowList: []
 
 services:
   - type: web
-    name: Recipe_app
+    name: rails
     env: ruby
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    buildCommand: './bin/render-build.sh'
+    startCommand: bundle exec puma -C config/puma.rb
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: Recipe_app
-          property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: postgres
+          property: connectionString
+  - type: redis
+    name: redis
+    ipAllowList: []
+    memoryPolicy: neoviction
